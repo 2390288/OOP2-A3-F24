@@ -115,13 +115,11 @@ public class DeckController {
             Alert selectionErrorAlert = new Alert(Alert.AlertType.ERROR, "Please choose a scoring strategy first.");
             selectionErrorAlert.showAndWait();
         } else {
-                ScoringStrategy strategy;
-                switch (choice) {
-                    case "Simple Count":
-                         strategy = new SimpleCountStrategy(); //Set strategy to SimpleCountStrategy class
-                         int aScore = strategy.calculateScore(this.aHand); //make aScore calculate based on number of cards in hand
-                        this.aScoreLabel.setText(String.valueOf(aScore)); //Set aScoreLabel to aScore count.
-                        break;
+            switch (choice) {
+                case "Simple Count":
+                    // TODO: Replace the following line of code.
+                    this.aScoreLabel.setText("Simple count...");
+                    break;
                 case "Number Of Aces":
                     // TODO: Replace the following line of code.
                     this.aScoreLabel.setText("Number of aces...");
