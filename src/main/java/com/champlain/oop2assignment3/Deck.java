@@ -1,6 +1,5 @@
 package com.champlain.oop2assignment3;
 
-import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -56,14 +55,5 @@ public class Deck extends CardCollection implements CardSource {
      */
     public Iterator<Card> iterator() {
         return this.aCards.iterator();
-    }
-
-    /**
-     * Sorts the deck using the provided comparator.
-     *
-     * @param comparator The comparator to use for sorting the deck.
-     */
-    public void sort(Comparator<Card> comparator) {
-        this.aCards.sort(comparator);  // Using List.sort() instead of Collections.sort()
     }
 }
